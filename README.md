@@ -118,7 +118,9 @@ THE AMOUNT OF FUCKING RAWTYPES AND UNCHECKED WARNINGS LITERALLY IS MORE TIMES TH
 🎵
 
 ## Compilation
-I've made it pretty easy, just run `compile.bat`. It will compile all the main source code in `/mars/` and `Mars.java` into a `/compile/` folder. Then it will make a wrapper jar file that contains all the files (so you basically can run it standalone, assuming you have java installed) into `/build/`. After it makes that, it will use WiX to create an executable installer version of the program in `/build/`. 
+I've made it pretty easy, just run `compile.bat`. It will compile all the main source code in `/mars/` and `Mars.java` into a `/compile/` folder. Then it will make a wrapper jar file that contains all the files (so you basically can run it standalone, assuming you have java installed) into `/build/`. After it makes that, it will use WiX to create an executable installer version of the program in `/build/`. It will then delete the `/compile/` dir.
+
+Did you know that if you already have an executable in `/build/`, the WiX will simply append the new executable it's tryign to make on the old one??? Well I didnT1 😴🥱 and i ended up with a file that was 250 mb after compiling it 5 times (in case you can't tell, normal size is 250/5 = 50 MB).
 
 The executable doesn't have an icon, so you can use the included `resource_hacker.zip` to insert an icon like `/images/truemars.ico` into the exeuctable at your discresion.
 
