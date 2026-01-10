@@ -5,5 +5,6 @@ commitmsg.txt
 *.sublime-workspace
 astyle*
 *.jar
-!downloads/*.jar
+build/*
 *.asm
+.vscode/*
